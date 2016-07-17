@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+
+<% if result[:success] && result[:message].to_s == '' %>
+  <%= "#{result[:title]}: #{Choices[result[:stat]]} salary is $#{result[:income_result]}" %>
+<% else %>
+  <%= result[:message] %>
+<% end %>

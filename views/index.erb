@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<p>Enter position:</p>
+<form action='result' method='post'>
+  <input type='text' name='title'>
+  <ul class='unstyled'>
+    <% Choices.each do |func, text| %>
+      <li>
+        <label class='radio'>
+          <% if text == 'average' %>
+            <input type='radio' name='stat' checked='checked' value='<%= func %>'>
+            <%= text %>
+          <% else %>
+            <input type='radio' name='stat' value='<%= func %>'/>
+            <%= text %>
+          <% end %>
+        </label>
+      </li>
+    <% end %>
+  </ul>
+</br>
+  <button type='submit' class='btn btn-primary'>Submit</button>
+</form>
