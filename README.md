@@ -33,8 +33,9 @@ POST http://<host>:4567/salary
 
 Sample calls to API:
 
-curl http://<host>:4567/salary/ -d "title=teacher"
-curl http://<host>:4567/salary/ -d "title=assistant+counselor&stat=max"
+`curl http://<host>:4567/salary/ -d "title=teacher"`
+
+`curl http://<host>:4567/salary/ -d "title=assistant+counselor&stat=max"`
 
 OR visit http://#{host}:4567/ for the UI
 
