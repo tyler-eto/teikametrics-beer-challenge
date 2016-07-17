@@ -23,13 +23,16 @@ Next steps would be to add ways to update and create new employee salary records
 
 
 ### API/UI Usage
+
 POST http://<host>:4567/salary
+
 |arg		|value			|default	|
 |-----------|---------------|-----------|
 |title  	|title to search|*required	|
 |stat   	|avg, min, max  |avg 		|
 
 Sample calls to API:
+
 curl http://<host>:4567/salary/ -d "title=teacher"
 curl http://<host>:4567/salary/ -d "title=assistant+counselor&stat=max"
 
